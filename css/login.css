@@ -1,0 +1,91 @@
+:root {
+    --black: #5c5c5ce1;
+    --bg-color: #f7e8ba;
+    --bg-form-input: #dfdfdf;
+    --boder-input: #cdcdcd;
+    --white: #ffff;
+    --bg-hover: #ebebeb;
+    user-select: none;
+}
+
+#login-screen {
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-title {
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.login-form {
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 20px;
+}
+
+.form-input label {
+    padding-right: 10px;
+}
+
+.login-form input {
+    outline: none;
+    border: none;
+    padding: 12px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--bg-form-input);
+}
+
+.direct-to-register {
+    padding-top: 6px;
+    opacity: 0.5;
+    transition: 0.5s all ease;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.direct-to-register:hover {
+    opacity: 1;
+    font-weight: 700;
+}
+
+#login-btn {
+    border: 1px solid var(--boder-input);
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#login-btn:hover {
+    transition: 0.5s all ease;
+    color: var(--black);
+    background-color: var(--bg-hover);
+    letter-spacing: 5px;
+}
+
+.form-input .password {
+    position: relative;
+}
+
+/* .form-input .password:after {
+    content: "";
+    background-image: url('../assets/icon/hidden.png') no-repeat;
+    background-size: 20px;
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--black);
+    left: 0px;
+} */

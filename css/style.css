@@ -1,0 +1,530 @@
+/* DESKTOP */
+
+/* header */
+header {
+    height: 120px;
+    width: 100%;
+    justify-content: space-between;
+}
+.header-logo {
+    margin-left: 108px;
+}
+.header-app-mode {
+    margin-right: 108px;
+}
+.header-menu a {
+    text-decoration: none;
+    color: #0D0D0E;
+}
+.header-menu .header-menu--item{
+    width: 149px;
+    height: 48px;
+    font-size: 22px;
+    line-height: 24px;
+    position: relative;
+}
+.header-menu--item:after, .header-menu--item:before {
+    position: absolute;
+    content: "";
+    background-color: #0D0D0E;
+    height: 2px;
+    width: 0px;
+    bottom: 0;
+    transition: 0.5s all ease;
+    left: calc(50%-35px);
+}
+.header-menu--item:hover:after, .header-menu--item:hover:before {
+    width: 55%;
+}
+
+/* container */
+.container > * {
+    padding: 0 108px;
+}
+/* INTRO */
+.intro {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px 0;
+}
+.intro {
+    margin: 178px 0 100px 0 ;
+}
+.intro .intro-big b {
+    color:white
+}
+.intro-button {
+    font-size: 34px;
+    line-height: 51px;
+    position: relative;
+}
+.intro-button:after {
+    position: absolute;
+    content: url('../assets/icon/arow-up.svg');
+    display: inline-block;
+    transform: rotate(90deg);
+    margin-left: 17.33px;
+    transition: 0.5s all ease;
+}
+.intro-button:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: #0D0D0E;
+    bottom: 0;
+    transition: 0.5s all ease;
+}
+.intro-button:hover:before {
+    width: 200px;
+}
+.intro-button:hover:after {
+    margin-left: 30px;
+}
+.intro .intro-links {
+    align-items: center;
+    margin-top: 197px;
+}
+.intro .intro-links a {
+    text-decoration: none;
+    color: #0D0D0E;
+    position: relative;
+    font-size: 17px;
+    line-height: 21px;
+}
+.intro .intro-links a:after, .intro .intro-links a:before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 1px;
+    background-color: #0D0D0E;
+    transition: 0.5s ease all;
+    left: 0;
+    bottom: -5px;
+}
+.intro .intro-links a:hover:after, .intro .intro-links a:hover:before{
+    width: 20px;
+}
+.intro .intro-links .line {
+    height: 1px;
+    width: 60px;
+    margin: 0 30px;
+}
+/* RESUME */
+.resume-turningpoint-des {
+    height: 2px;
+    width: 100%;
+    background-color: #0D0D0E;
+}
+.resume-turningpoint-mobile {
+    display: none;
+}
+.resume-experience {
+    padding-top: 51px;
+    justify-content: space-between;
+}
+.resume-experience .work-item {
+    position: relative;
+}
+.resume-experience .work-item:before {
+    top: -57px;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #0D0D0E;
+    border-radius: 50%;
+}
+/* PROJECT */
+.project-thumnails a {
+    text-decoration: none;
+    color: #0D0D0E;
+}
+.all-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px 24px;
+    width: 100%;
+}
+.all-projects .project {
+    width: 840px;
+    height: 733px;
+}
+.all-projects .project img {
+    width: 840px;
+    height: 567px;
+    padding-bottom: 24px;
+}
+
+.project .project-description {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-top: 16px;
+}
+
+.project-title {
+    position: relative;
+}
+.project-title:after , .project-title:before {
+    content:"";
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    background-color: #0D0D0E;
+    transition: 1s ease all;
+    left: 0;
+    bottom:0;
+}
+.project-title:hover:after  , .project-title:hover:before  {
+    width: 100%;
+}
+/* CONTACT */
+.contact-description {
+    height: 230px;
+}
+.contact-description a {
+    opacity: 0.5;
+    transition: 0.5s all ease;
+    position: relative;
+    text-decoration: none;
+    color: #0D0D0E;
+}
+.contact-description a:hover {
+    opacity: 1;   
+}
+.contact-description a:after,.contact-description a:before {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-color: #0D0D0E;
+    transition: 1s all ease;
+    border-radius: 5px;
+}
+.contact-description a:hover:after,.contact-description a:hover:before {
+    width: 890px;
+}
+.contact .line-long {
+    width: 100%;
+    background-color: #0D0D0E;
+    height: 1px;
+}
+/* footer */
+footer {
+    height: 456px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px 0;
+    width: 100%;
+}
+footer .links-item {
+    width: 176px;
+    height: 42px;
+}
+footer .links-item > img {
+    margin-left: 12.92px;
+    transform: rotate(45deg);
+}
+footer .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color:#0D0D0E;
+    margin: 0 64px;
+}
+footer br {
+    display: none;
+}
+
+/* MOBILE */
+@media only screen and  (max-width: 390px) {
+    header {
+        height: 50px;
+    }
+    header .header-menu {
+        display: none;
+    }
+    .header-logo {
+        margin-left: 24px;
+    }
+    .header-logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .header-app-mode {
+        margin-right: 29.4px;
+    }
+    .header-app-mode img {
+        width: 19.2px;
+        height: 19.2px;
+    }
+    .container > * {
+        padding: 0 24px;
+    }
+    .intro br {
+        display: none;
+    }
+    
+    .intro-button {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .intro-button:hover:before {
+        width:120px;
+    }
+    .intro-button:after {
+       content: url('../assets/icon/Vector.svg');
+       transform: rotate(0deg);
+       margin-left: 10.67px;
+    }
+    .intro .intro-links {
+        margin-top: 147px;
+    }
+    .intro-detail {
+        letter-spacing: -0.32px;
+    }
+    .resume {
+        position: relative;
+    }
+    .resume-experience  {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 66px;
+        padding-top: 0;
+    }
+    .resume-experience .work-item {
+        margin-left: 20px;
+    }
+    .resume-experience .work-item:before {
+        top:5px;
+        left: -20px;
+        margin-right: 20px;
+       
+    }
+    .resume-turningpoint-des {
+        display: none;
+    }
+    .resume-turningpoint-mobile {
+        display: block;
+        width: 1px;
+        height: 250px;
+        background-color: #0D0D0E;
+        position: absolute;
+        top: 150px;
+        left: 29px;
+    }
+    .all-projects .project {
+        width: 328px;
+        height: 300px;
+    }
+    .all-projects .project img {
+        width: 328px;
+        height: 221px;
+        padding-bottom: 12px;
+    }
+    .project .project-description {
+        font-size: 13px;
+        line-height: 21px;
+        letter-spacing: -0.32px;
+        padding-top: 4px;
+    }
+    #contact > div.contact-description.font-bold.font-big.pb-100 {
+        font-size: 48px;
+        line-height: 50.4px;
+        height: auto;
+    }
+    #contact > div.contact-description br {
+        display: none;
+    }
+    .contact-description a:after, .contact-description a:before {
+        display: none;
+    }
+    footer {
+        height: 404px;
+        flex-direction: column;
+        letter-spacing: -0.32px;
+    }
+    footer br {
+        display: block;
+    }
+    footer .dot {
+        display: none;
+    }
+    body > footer > div.footer-author.font-small.font-normal {
+        font-size: 15px;
+        padding-top: 60px;
+        font-weight: 500;
+        width: 253px;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        position: relative;
+    }
+    .footer-links img {
+        width: 13.33px;
+        height: 13.33px;
+        margin-left: 8.57px;
+    }
+    body > footer > div.footer-links.flex.center > div:nth-child(1) {
+        right: 0;
+        font-size: 16px;
+    }
+    
+    body > footer > div.footer-links.flex.center > div:nth-child(3) {
+        left:0;
+        font-size: 16px;
+    }
+    body > footer > div.footer-links.flex.center > div:nth-child(5) {
+        bottom: -64px;
+        font-size: 16px;
+    }
+    .links-item {
+        /* position: absolute; */
+    }
+}
+
+
+/* TABLET */
+@media only screen and  (min-width: 391px) and (max-width:1000px) {
+    header {
+        height: 100px;
+    }
+    header .header-menu {
+        display: none;
+    }
+    .header-logo {
+        margin-left: 24px;
+    }
+    .header-logo img {
+        width: 60px;
+        height: 60px;
+    }
+    .header-app-mode {
+        margin-right: 32px;
+    }
+    .header-app-mode img {
+        width: 24px;
+        height: 24px;
+    }
+    .container > * {
+        padding: 0 30px;
+    }
+    .intro br {
+        display: none;
+    }
+    
+    .intro-button {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .intro-button:hover:before {
+        width:120px;
+    }
+    .intro .intro-links {
+        margin-top: 100px;
+    }
+    .intro-detail {
+        letter-spacing: -0.12px;
+    }
+    .resume {
+        position: relative;
+    }
+    .resume-experience  {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 46px;
+        padding-top: 0;
+    }
+    .resume-experience .work-item {
+        margin-left: 20px;
+    }
+    .resume-experience .work-item:before {
+        top:5px;
+        left: -20px;
+        margin-right: 20px;
+       
+    }
+    .resume-turningpoint-des {
+        display: none;
+    }
+    .resume-turningpoint-mobile {
+        display: block;
+        width: 1px;
+        height: 280px;
+        background-color: #0D0D0E;
+        position: absolute;
+        top: 210px;
+        left: 35px;
+    }
+    body > div > section.lastest-projects > div.lastest-projects--title.font-bold.font-large.pt-100.pb-60 {
+        padding-top: 0;
+    }
+    .all-projects .project {
+        width: 100%;
+        height: auto;
+    }
+    .all-projects .project img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 12px;
+    }
+    .project .project-description {
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: -0.32px;
+        padding-top: 4px;
+    }
+    #contact > div.contact-description.font-bold.font-big.pb-100 {
+        font-size: 48px;
+        line-height: 50.4px;
+        height: auto;
+    }
+    #contact > div.contact-title.font-bold.font-large.pt-100.pb-60 {
+        padding-top: 0;
+    }
+    #contact > div.contact-description br {
+        display: none;
+    }
+   .contact-description a:after, .contact-description a:before {
+        display: none;
+    }
+    footer .dot {
+        display: none;
+    }
+    body > footer > div.footer-author.font-small.font-normal {
+        font-size: 15px;
+        padding-top: 60px;
+        font-weight: 500;
+        width: 253px;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        position: relative;
+    }
+    body > footer > div.footer-links.flex.center > div:nth-child(1) {
+        right: 0;
+        font-size: 16px;
+    }
+    
+    body > footer > div.footer-links.flex.center > div:nth-child(3) {
+        left: 0;
+        font-size: 16px;
+    }
+    body > footer > div.footer-links.flex.center > div:nth-child(5) {
+        bottom: -64px;
+        font-size: 16px;
+    }
+    .links-item {
+        
+    }
+}
